@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TrailingIconLabelStyle: LabelStyle {
-    fields func makeBody(configuration: Configuration) -> some View {
+     func makeBody(configuration: Configuration) -> some View {
         HStack() {
             configuration.title
             configuration.icon
@@ -19,3 +19,4 @@ struct TrailingIconLabelStyle: LabelStyle {
 extension LabelStyle where Self == TrailingIconLabelStyle {
     static var trailingIcon: Self { Self() }
 }
+
